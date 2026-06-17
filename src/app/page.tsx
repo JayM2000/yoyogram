@@ -1,65 +1,83 @@
-import Image from "next/image";
+"use client";
+
+import { useTRPC } from "@/trpc/client";
+import { useQuery } from "@tanstack/react-query";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  const trpc = useTRPC();
+  
+  // Use TanStack query through the tRPC options proxy
+  const { data: helloData, isLoading: helloLoading } = useQuery(
+    trpc.example.hello.queryOptions({ text: "from Yoyogram" })
+  );
+
+  const { data: allData, isLoading: allLoading } = useQuery(
+    trpc.example.getAll.queryOptions()
+  );
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen bg-slate-950 text-slate-50 flex flex-col items-center justify-center p-6 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black">
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+      
+      <div className="z-10 max-w-3xl w-full flex flex-col items-center space-y-12">
+        <div className="text-center space-y-4">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 drop-shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            Yoyogram
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg md:text-xl text-slate-400 max-w-xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150">
+            Your full-stack foundation powered by Next.js, tRPC, TanStack Query, and shadcn/ui.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+          <div className="relative group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+            <div className="relative bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center space-y-4">
+              <h2 className="text-2xl font-semibold text-slate-200">tRPC Hello Query</h2>
+              {helloLoading ? (
+                <div className="h-10 flex items-center justify-center">
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-indigo-400"></div>
+                </div>
+              ) : (
+                <p className="text-lg font-medium text-indigo-300 py-2">
+                  {helloData?.greeting}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+            <div className="relative bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 h-full flex flex-col items-center text-center space-y-4">
+              <h2 className="text-2xl font-semibold text-slate-200">tRPC List Query</h2>
+              {allLoading ? (
+                <div className="h-24 flex items-center justify-center">
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-pink-400"></div>
+                </div>
+              ) : (
+                <ul className="space-y-2 w-full">
+                  {allData?.map((item) => (
+                    <li key={item.id} className="bg-slate-800/50 rounded-lg py-2 px-4 text-slate-300 flex justify-between items-center hover:bg-slate-800 transition-colors">
+                      <span className="text-sm text-slate-500">#{item.id}</span>
+                      <span>{item.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
         </div>
-      </main>
+
+        <div className="flex gap-4 pt-8 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
+          <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full px-8 shadow-lg shadow-indigo-500/20">
+            Get Started
+          </Button>
+          <Button size="lg" variant="outline" className="rounded-full px-8 border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-200 backdrop-blur-md">
+            Documentation
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }

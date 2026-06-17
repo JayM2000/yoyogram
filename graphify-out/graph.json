@@ -1,0 +1,337 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\eslint.config.mjs",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_eslint_config_mjs",
+      "community": 6,
+      "norm_label": "eslint.config.mjs"
+    },
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\next-env.d.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_next_env_d_ts",
+      "community": 7,
+      "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\next.config.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_next_config_ts",
+      "community": 8,
+      "norm_label": "next.config.ts"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\postcss.config.mjs",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_postcss_config_mjs",
+      "community": 9,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\layout.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_app_layout_tsx",
+      "community": 1,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\layout.tsx",
+      "source_location": "L21",
+      "id": "layout_rootlayout",
+      "community": 1,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\page.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_app_page_tsx",
+      "community": 10,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\api\\trpc\\[trpc]\\route.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_app_api_trpc_trpc_route_ts",
+      "community": 2,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "handler()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\api\\trpc\\[trpc]\\route.ts",
+      "source_location": "L12",
+      "id": "route_handler",
+      "community": 2,
+      "norm_label": "handler()"
+    },
+    {
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\ui\\button.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_ui_button_tsx",
+      "community": 3,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\ui\\button.tsx",
+      "source_location": "L52",
+      "id": "button_cn",
+      "community": 3,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\lib\\utils.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_lib_utils_ts",
+      "community": 4,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\lib\\utils.ts",
+      "source_location": "L4",
+      "id": "utils_cn",
+      "community": 4,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "trpc.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\server\\trpc.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_server_trpc_ts",
+      "community": 11,
+      "norm_label": "trpc.ts"
+    },
+    {
+      "label": "example.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\server\\routers\\example.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_server_routers_example_ts",
+      "community": 12,
+      "norm_label": "example.ts"
+    },
+    {
+      "label": "_app.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\server\\routers\\_app.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_server_routers_app_ts",
+      "community": 13,
+      "norm_label": "_app.ts"
+    },
+    {
+      "label": "client.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "community": 0,
+      "norm_label": "client.tsx"
+    },
+    {
+      "label": "getQueryClient()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L29",
+      "id": "client_getqueryclient",
+      "community": 0,
+      "norm_label": "getqueryclient()"
+    },
+    {
+      "label": "getUrl()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L38",
+      "id": "client_geturl",
+      "community": 0,
+      "norm_label": "geturl()"
+    },
+    {
+      "label": "TRPCReactProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L47",
+      "id": "client_trpcreactprovider",
+      "community": 0,
+      "norm_label": "trpcreactprovider()"
+    },
+    {
+      "label": "query-client.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\query-client.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_trpc_query_client_ts",
+      "community": 5,
+      "norm_label": "query-client.ts"
+    },
+    {
+      "label": "makeQueryClient()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\query-client.ts",
+      "source_location": "L14",
+      "id": "query_client_makequeryclient",
+      "community": 5,
+      "norm_label": "makequeryclient()"
+    },
+    {
+      "label": "server.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\server.ts",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_trpc_server_ts",
+      "community": 14,
+      "norm_label": "server.ts"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\layout.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_app_layout_tsx",
+      "_tgt": "layout_rootlayout",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_app_layout_tsx",
+      "target": "layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\api\\trpc\\[trpc]\\route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_app_api_trpc_trpc_route_ts",
+      "_tgt": "route_handler",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_app_api_trpc_trpc_route_ts",
+      "target": "route_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\ui\\button.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_ui_button_tsx",
+      "_tgt": "button_cn",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_ui_button_tsx",
+      "target": "button_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\lib\\utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_lib_utils_ts",
+      "_tgt": "utils_cn",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_lib_utils_ts",
+      "target": "utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "_tgt": "client_getqueryclient",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "target": "client_getqueryclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "_tgt": "client_geturl",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "target": "client_geturl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "_tgt": "client_trpcreactprovider",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_trpc_client_tsx",
+      "target": "client_trpcreactprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "client_trpcreactprovider",
+      "_tgt": "client_getqueryclient",
+      "source": "client_getqueryclient",
+      "target": "client_trpcreactprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\client.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_src": "client_getqueryclient",
+      "_tgt": "query_client_makequeryclient",
+      "source": "client_getqueryclient",
+      "target": "query_client_makequeryclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\query-client.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_trpc_query_client_ts",
+      "_tgt": "query_client_makequeryclient",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_trpc_query_client_ts",
+      "target": "query_client_makequeryclient",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
