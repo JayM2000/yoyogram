@@ -1,12 +1,12 @@
-# Graph Report - C:\Users\misal\OneDrive\Documents\yoyogram  (2026-06-18)
+# Graph Report - C:\Users\misal\OneDrive\Documents\yoyogram  (2026-06-19)
 
 ## Corpus Check
-- 15 files · ~2,175 words
+- 29 files · ~10,535 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 23 nodes · 10 edges · 15 communities detected
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 51 nodes · 24 edges · 28 communities detected
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -25,6 +25,19 @@
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
 - [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `getQueryClient()` - 3 edges
@@ -38,19 +51,19 @@
 ## Communities
 
 ### Community 0 - "Community 0"
-Cohesion: 0.67
-Nodes (2): getQueryClient(), TRPCReactProvider()
+Cohesion: 0.4
+Nodes (3): getQueryClient(), TRPCReactProvider(), makeQueryClient()
 
 ### Community 1 - "Community 1"
-Cohesion: 1.0
+Cohesion: 0.5
 Nodes (0): 
 
 ### Community 2 - "Community 2"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 3 - "Community 3"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 4 - "Community 4"
@@ -59,7 +72,7 @@ Nodes (0):
 
 ### Community 5 - "Community 5"
 Cohesion: 1.0
-Nodes (1): makeQueryClient()
+Nodes (0): 
 
 ### Community 6 - "Community 6"
 Cohesion: 1.0
@@ -97,40 +110,107 @@ Nodes (0):
 Cohesion: 1.0
 Nodes (0): 
 
+### Community 15 - "Community 15"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 16 - "Community 16"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 17 - "Community 17"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 18 - "Community 18"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 19 - "Community 19"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 20 - "Community 20"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 21 - "Community 21"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 22 - "Community 22"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 23 - "Community 23"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 24 - "Community 24"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 25 - "Community 25"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 26 - "Community 26"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 27 - "Community 27"
+Cohesion: 1.0
+Nodes (0): 
+
 ## Knowledge Gaps
-- **Thin community `Community 1`** (2 nodes): `layout.tsx`, `RootLayout()`
+- **Thin community `Community 4`** (2 nodes): `layout.tsx`, `RootLayout()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 2`** (2 nodes): `route.ts`, `handler()`
+- **Thin community `Community 5`** (2 nodes): `layout.tsx`, `RootGroupLayout()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 3`** (2 nodes): `cn()`, `button.tsx`
+- **Thin community `Community 6`** (2 nodes): `route.ts`, `handler()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 4`** (2 nodes): `utils.ts`, `cn()`
+- **Thin community `Community 7`** (2 nodes): `FadeIn.tsx`, `FadeIn()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 5`** (2 nodes): `query-client.ts`, `makeQueryClient()`
+- **Thin community `Community 8`** (2 nodes): `SlideUp.tsx`, `SlideUp()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 6`** (1 nodes): `eslint.config.mjs`
+- **Thin community `Community 9`** (2 nodes): `ThemeToggle.tsx`, `ThemeToggle()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 7`** (1 nodes): `next-env.d.ts`
+- **Thin community `Community 10`** (2 nodes): `ThemeProvider.tsx`, `ThemeProvider()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 8`** (1 nodes): `next.config.ts`
+- **Thin community `Community 11`** (2 nodes): `GlassCard.tsx`, `GlassCard()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 9`** (1 nodes): `postcss.config.mjs`
+- **Thin community `Community 12`** (2 nodes): `GradientText.tsx`, `GradientText()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 10`** (1 nodes): `page.tsx`
+- **Thin community `Community 13`** (2 nodes): `cn()`, `button.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 11`** (1 nodes): `trpc.ts`
+- **Thin community `Community 14`** (2 nodes): `utils.ts`, `cn()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 12`** (1 nodes): `example.ts`
+- **Thin community `Community 15`** (1 nodes): `eslint.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 13`** (1 nodes): `_app.ts`
+- **Thin community `Community 16`** (1 nodes): `next-env.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 14`** (1 nodes): `server.ts`
+- **Thin community `Community 17`** (1 nodes): `next.config.ts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 18`** (1 nodes): `postcss.config.mjs`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 19`** (1 nodes): `page.tsx`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 20`** (1 nodes): `page.tsx`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 21`** (1 nodes): `MobileNav.tsx`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 22`** (1 nodes): `Sidebar.tsx`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 23`** (1 nodes): `Avatar.tsx`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 24`** (1 nodes): `trpc.ts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 25`** (1 nodes): `example.ts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 26`** (1 nodes): `_app.ts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 27`** (1 nodes): `server.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
-_Questions this graph is uniquely positioned to answer:_
-
-- **Why does `getQueryClient()` connect `Community 0` to `Community 5`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
-- **Why does `makeQueryClient()` connect `Community 5` to `Community 0`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+_Not enough signal to generate questions. This usually means the corpus has no AMBIGUOUS edges, no bridge nodes, no INFERRED relationships, and all communities are tightly cohesive. Add more files or run with --mode deep to extract richer edges._

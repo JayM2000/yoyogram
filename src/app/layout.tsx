@@ -1,21 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, JetBrains_Mono } from "next/font/google";
 import { TRPCReactProvider } from "@/trpc/client";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Yoyogram",
-  description: "Yoyogram - Built with Next.js, tRPC, and TanStack Query",
+  title: "Aura — Express. Connect. Evolve.",
+  description:
+    "Aura is a next-generation social media platform. Share your story, connect with your people, and evolve your digital presence.",
+  keywords: ["social media", "photos", "stories", "connect", "aura"],
 };
 
 export default function RootLayout({
@@ -26,10 +31,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${outfit.variable} ${jetbrainsMono.variable} dark`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+      <body className="min-h-dvh flex flex-col antialiased">
+        <ThemeProvider>
+          <TRPCReactProvider>{children}</TRPCReactProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\eslint.config.mjs",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_eslint_config_mjs",
-      "community": 6,
+      "community": 15,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\next-env.d.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_next_env_d_ts",
-      "community": 7,
+      "community": 16,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\next.config.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_next_config_ts",
-      "community": 8,
+      "community": 17,
       "norm_label": "next.config.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\postcss.config.mjs",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_postcss_config_mjs",
-      "community": 9,
+      "community": 18,
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -45,16 +45,16 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\layout.tsx",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_app_layout_tsx",
-      "community": 1,
+      "community": 4,
       "norm_label": "layout.tsx"
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\layout.tsx",
-      "source_location": "L21",
+      "source_location": "L26",
       "id": "layout_rootlayout",
-      "community": 1,
+      "community": 4,
       "norm_label": "rootlayout()"
     },
     {
@@ -63,7 +63,34 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\page.tsx",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_app_page_tsx",
-      "community": 10,
+      "community": 19,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\(root)\\layout.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_app_root_layout_tsx",
+      "community": 5,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "RootGroupLayout()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\(root)\\layout.tsx",
+      "source_location": "L4",
+      "id": "layout_rootgrouplayout",
+      "community": 5,
+      "norm_label": "rootgrouplayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\(root)\\page.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_app_root_page_tsx",
+      "community": 20,
       "norm_label": "page.tsx"
     },
     {
@@ -72,7 +99,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\api\\trpc\\[trpc]\\route.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_app_api_trpc_trpc_route_ts",
-      "community": 2,
+      "community": 6,
       "norm_label": "route.ts"
     },
     {
@@ -81,8 +108,233 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\api\\trpc\\[trpc]\\route.ts",
       "source_location": "L12",
       "id": "route_handler",
-      "community": 2,
+      "community": 6,
       "norm_label": "handler()"
+    },
+    {
+      "label": "FadeIn.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\FadeIn.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_fadein_tsx",
+      "community": 7,
+      "norm_label": "fadein.tsx"
+    },
+    {
+      "label": "FadeIn()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\FadeIn.tsx",
+      "source_location": "L21",
+      "id": "fadein_fadein",
+      "community": 7,
+      "norm_label": "fadein()"
+    },
+    {
+      "label": "SlideUp.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\SlideUp.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_slideup_tsx",
+      "community": 8,
+      "norm_label": "slideup.tsx"
+    },
+    {
+      "label": "SlideUp()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\SlideUp.tsx",
+      "source_location": "L15",
+      "id": "slideup_slideup",
+      "community": 8,
+      "norm_label": "slideup()"
+    },
+    {
+      "label": "StaggerChildren.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "community": 1,
+      "norm_label": "staggerchildren.tsx"
+    },
+    {
+      "label": "containerVariants()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L16",
+      "id": "staggerchildren_containervariants",
+      "community": 1,
+      "norm_label": "containervariants()"
+    },
+    {
+      "label": "StaggerChildren()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L38",
+      "id": "staggerchildren_staggerchildren",
+      "community": 1,
+      "norm_label": "staggerchildren()"
+    },
+    {
+      "label": "StaggerItem()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L59",
+      "id": "staggerchildren_staggeritem",
+      "community": 1,
+      "norm_label": "staggeritem()"
+    },
+    {
+      "label": "MobileNav.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\layout\\MobileNav.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_layout_mobilenav_tsx",
+      "community": 21,
+      "norm_label": "mobilenav.tsx"
+    },
+    {
+      "label": "Sidebar.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\layout\\Sidebar.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_layout_sidebar_tsx",
+      "community": 22,
+      "norm_label": "sidebar.tsx"
+    },
+    {
+      "label": "ThemeToggle.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\layout\\ThemeToggle.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_layout_themetoggle_tsx",
+      "community": 9,
+      "norm_label": "themetoggle.tsx"
+    },
+    {
+      "label": "ThemeToggle()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\layout\\ThemeToggle.tsx",
+      "source_location": "L7",
+      "id": "themetoggle_themetoggle",
+      "community": 9,
+      "norm_label": "themetoggle()"
+    },
+    {
+      "label": "ThemeProvider.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\providers\\ThemeProvider.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_providers_themeprovider_tsx",
+      "community": 10,
+      "norm_label": "themeprovider.tsx"
+    },
+    {
+      "label": "ThemeProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\providers\\ThemeProvider.tsx",
+      "source_location": "L5",
+      "id": "themeprovider_themeprovider",
+      "community": 10,
+      "norm_label": "themeprovider()"
+    },
+    {
+      "label": "AnimatedCounter.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\AnimatedCounter.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_animatedcounter_tsx",
+      "community": 2,
+      "norm_label": "animatedcounter.tsx"
+    },
+    {
+      "label": "formatCompact()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\AnimatedCounter.tsx",
+      "source_location": "L13",
+      "id": "animatedcounter_formatcompact",
+      "community": 2,
+      "norm_label": "formatcompact()"
+    },
+    {
+      "label": "AnimatedCounter()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\AnimatedCounter.tsx",
+      "source_location": "L19",
+      "id": "animatedcounter_animatedcounter",
+      "community": 2,
+      "norm_label": "animatedcounter()"
+    },
+    {
+      "label": "Avatar.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\Avatar.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_avatar_tsx",
+      "community": 23,
+      "norm_label": "avatar.tsx"
+    },
+    {
+      "label": "GlassCard.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GlassCard.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_glasscard_tsx",
+      "community": 11,
+      "norm_label": "glasscard.tsx"
+    },
+    {
+      "label": "GlassCard()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GlassCard.tsx",
+      "source_location": "L10",
+      "id": "glasscard_glasscard",
+      "community": 11,
+      "norm_label": "glasscard()"
+    },
+    {
+      "label": "GradientButton.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientButton.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradientbutton_tsx",
+      "community": 3,
+      "norm_label": "gradientbutton.tsx"
+    },
+    {
+      "label": "GradientButton()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientButton.tsx",
+      "source_location": "L18",
+      "id": "gradientbutton_gradientbutton",
+      "community": 3,
+      "norm_label": "gradientbutton()"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientButton.tsx",
+      "source_location": "L40",
+      "id": "gradientbutton_cn",
+      "community": 3,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "GradientText.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientText.tsx",
+      "source_location": "L1",
+      "id": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradienttext_tsx",
+      "community": 12,
+      "norm_label": "gradienttext.tsx"
+    },
+    {
+      "label": "GradientText()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientText.tsx",
+      "source_location": "L11",
+      "id": "gradienttext_gradienttext",
+      "community": 12,
+      "norm_label": "gradienttext()"
     },
     {
       "label": "button.tsx",
@@ -90,7 +342,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\ui\\button.tsx",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_components_ui_button_tsx",
-      "community": 3,
+      "community": 13,
       "norm_label": "button.tsx"
     },
     {
@@ -99,7 +351,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\ui\\button.tsx",
       "source_location": "L52",
       "id": "button_cn",
-      "community": 3,
+      "community": 13,
       "norm_label": "cn()"
     },
     {
@@ -108,7 +360,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\lib\\utils.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_lib_utils_ts",
-      "community": 4,
+      "community": 14,
       "norm_label": "utils.ts"
     },
     {
@@ -117,7 +369,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\lib\\utils.ts",
       "source_location": "L4",
       "id": "utils_cn",
-      "community": 4,
+      "community": 14,
       "norm_label": "cn()"
     },
     {
@@ -126,7 +378,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\server\\trpc.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_server_trpc_ts",
-      "community": 11,
+      "community": 24,
       "norm_label": "trpc.ts"
     },
     {
@@ -135,7 +387,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\server\\routers\\example.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_server_routers_example_ts",
-      "community": 12,
+      "community": 25,
       "norm_label": "example.ts"
     },
     {
@@ -144,7 +396,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\server\\routers\\_app.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_server_routers_app_ts",
-      "community": 13,
+      "community": 26,
       "norm_label": "_app.ts"
     },
     {
@@ -189,7 +441,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\query-client.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_trpc_query_client_ts",
-      "community": 5,
+      "community": 0,
       "norm_label": "query-client.ts"
     },
     {
@@ -198,7 +450,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\query-client.ts",
       "source_location": "L14",
       "id": "query_client_makequeryclient",
-      "community": 5,
+      "community": 0,
       "norm_label": "makequeryclient()"
     },
     {
@@ -207,7 +459,7 @@
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\trpc\\server.ts",
       "source_location": "L1",
       "id": "c_users_misal_onedrive_documents_yoyogram_src_trpc_server_ts",
-      "community": 14,
+      "community": 27,
       "norm_label": "server.ts"
     }
   ],
@@ -216,12 +468,24 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\layout.tsx",
-      "source_location": "L21",
+      "source_location": "L26",
       "weight": 1.0,
       "_src": "c_users_misal_onedrive_documents_yoyogram_src_app_layout_tsx",
       "_tgt": "layout_rootlayout",
       "source": "c_users_misal_onedrive_documents_yoyogram_src_app_layout_tsx",
       "target": "layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\app\\(root)\\layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_app_root_layout_tsx",
+      "_tgt": "layout_rootgrouplayout",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_app_root_layout_tsx",
+      "target": "layout_rootgrouplayout",
       "confidence_score": 1.0
     },
     {
@@ -234,6 +498,162 @@
       "_tgt": "route_handler",
       "source": "c_users_misal_onedrive_documents_yoyogram_src_app_api_trpc_trpc_route_ts",
       "target": "route_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\FadeIn.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_fadein_tsx",
+      "_tgt": "fadein_fadein",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_fadein_tsx",
+      "target": "fadein_fadein",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\SlideUp.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_slideup_tsx",
+      "_tgt": "slideup_slideup",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_slideup_tsx",
+      "target": "slideup_slideup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "_tgt": "staggerchildren_containervariants",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "target": "staggerchildren_containervariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "_tgt": "staggerchildren_staggerchildren",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "target": "staggerchildren_staggerchildren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\animations\\StaggerChildren.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "_tgt": "staggerchildren_staggeritem",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_animations_staggerchildren_tsx",
+      "target": "staggerchildren_staggeritem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\layout\\ThemeToggle.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_layout_themetoggle_tsx",
+      "_tgt": "themetoggle_themetoggle",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_layout_themetoggle_tsx",
+      "target": "themetoggle_themetoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\providers\\ThemeProvider.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_providers_themeprovider_tsx",
+      "_tgt": "themeprovider_themeprovider",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_providers_themeprovider_tsx",
+      "target": "themeprovider_themeprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\AnimatedCounter.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_animatedcounter_tsx",
+      "_tgt": "animatedcounter_formatcompact",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_animatedcounter_tsx",
+      "target": "animatedcounter_formatcompact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\AnimatedCounter.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_animatedcounter_tsx",
+      "_tgt": "animatedcounter_animatedcounter",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_animatedcounter_tsx",
+      "target": "animatedcounter_animatedcounter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GlassCard.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_glasscard_tsx",
+      "_tgt": "glasscard_glasscard",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_glasscard_tsx",
+      "target": "glasscard_glasscard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientButton.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradientbutton_tsx",
+      "_tgt": "gradientbutton_gradientbutton",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradientbutton_tsx",
+      "target": "gradientbutton_gradientbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientButton.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradientbutton_tsx",
+      "_tgt": "gradientbutton_cn",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradientbutton_tsx",
+      "target": "gradientbutton_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\misal\\OneDrive\\Documents\\yoyogram\\src\\components\\shared\\GradientText.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradienttext_tsx",
+      "_tgt": "gradienttext_gradienttext",
+      "source": "c_users_misal_onedrive_documents_yoyogram_src_components_shared_gradienttext_tsx",
+      "target": "gradienttext_gradienttext",
       "confidence_score": 1.0
     },
     {
