@@ -1,71 +1,12 @@
 /**
- * Post router — handles feed, post CRUD, likes, saves.
- * Uses mock data for now; will wire to Prisma when DB is connected.
+ * Post router — feed, CRUD, likes, saves — backed by Neon PostgreSQL via Prisma.
  */
 import { z } from "zod";
 import { createTRPCRouter, baseProcedure } from "@/server/trpc";
-
-// Mock data matching the UI expectations
-const mockUsers = [
-  { id: "u1", username: "sarah_dev", displayName: "Sarah Chen", avatar: null, isVerified: true },
-  { id: "u2", username: "luna_design", displayName: "Luna Park", avatar: null, isVerified: false },
-  { id: "u3", username: "alex.codes", displayName: "Alex Rivera", avatar: null, isVerified: true },
-  { id: "u4", username: "kai.music", displayName: "Kai Santos", avatar: null, isVerified: false },
-];
-
-const mockPosts = [
-  {
-    id: "p1",
-    userId: "u1",
-    user: mockUsers[0],
-    mediaUrl: ["https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=600&fit=crop"],
-    caption: "Building the future, one line of code at a time ✨ #coding #developer #futuristic",
-    location: "San Francisco, CA",
-    createdAt: new Date(Date.now() - 2 * 60 * 60 * 1000),
-    liked: false,
-    saved: false,
-    _count: { likes: 2847, comments: 142 },
-  },
-  {
-    id: "p2",
-    userId: "u2",
-    user: mockUsers[1],
-    mediaUrl: ["https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=600&h=600&fit=crop"],
-    caption: "Neon dreams and pixel themes 🌙 Love exploring these new design concepts #design #ui",
-    location: "Tokyo, Japan",
-    createdAt: new Date(Date.now() - 4 * 60 * 60 * 1000),
-    liked: true,
-    saved: true,
-    _count: { likes: 5123, comments: 328 },
-  },
-  {
-    id: "p3",
-    userId: "u3",
-    user: mockUsers[2],
-    mediaUrl: ["https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=600&fit=crop"],
-    caption: "Retro vibes meet modern tech 🎮 The aesthetic is unmatched #retro #gaming #tech",
-    location: "Austin, TX",
-    createdAt: new Date(Date.now() - 6 * 60 * 60 * 1000),
-    liked: false,
-    saved: false,
-    _count: { likes: 1956, comments: 89 },
-  },
-  {
-    id: "p4",
-    userId: "u4",
-    user: mockUsers[3],
-    mediaUrl: ["https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=600&fit=crop"],
-    caption: "Sound waves in the mountains 🏔️ Nature is the ultimate inspiration #music #nature",
-    location: "Aspen, CO",
-    createdAt: new Date(Date.now() - 10 * 60 * 60 * 1000),
-    liked: false,
-    saved: false,
-    _count: { likes: 3421, comments: 201 },
-  },
-];
+import { db } from "@/server/db";
 
 export const postRouter = createTRPCRouter({
-  // Infinite feed
+  // Infinite feed (all posts, newest first)
   getFeed: baseProcedure
     .input(
       z.object({
@@ -73,60 +14,198 @@ export const postRouter = createTRPCRouter({
         limit: z.number().min(1).max(20).default(10),
       })
     )
-    .query(({ input }) => {
+    .query(async ({ input }) => {
       const { cursor, limit } = input;
-      const startIndex = cursor
-        ? mockPosts.findIndex((p) => p.id === cursor) + 1
-        : 0;
-      const posts = mockPosts.slice(startIndex, startIndex + limit);
-      const nextCursor =
-        startIndex + limit < mockPosts.length
-          ? mockPosts[startIndex + limit - 1]?.id
-          : undefined;
+
+      const posts = await db.post.findMany({
+        take: limit + 1,
+        ...(cursor && { cursor: { id: cursor }, skip: 1 }),
+        orderBy: { createdAt: "desc" },
+        include: {
+          user: {
+            select: {
+              id: true,
+              username: true,
+              displayName: true,
+              avatar: true,
+              isVerified: true,
+            },
+          },
+          _count: {
+            select: { likes: true, comments: true },
+          },
+        },
+      });
+
+      let nextCursor: string | undefined;
+      if (posts.length > limit) {
+        const next = posts.pop();
+        nextCursor = next?.id;
+      }
 
       return { posts, nextCursor };
     }),
 
-  // Get single post
+  // Get single post with comments
   getPost: baseProcedure
     .input(z.object({ postId: z.string() }))
-    .query(({ input }) => {
-      const post = mockPosts.find((p) => p.id === input.postId);
+    .query(async ({ input }) => {
+      const post = await db.post.findUnique({
+        where: { id: input.postId },
+        include: {
+          user: {
+            select: {
+              id: true,
+              username: true,
+              displayName: true,
+              avatar: true,
+              isVerified: true,
+            },
+          },
+          comments: {
+            include: {
+              user: {
+                select: {
+                  id: true,
+                  username: true,
+                  displayName: true,
+                  avatar: true,
+                  isVerified: true,
+                },
+              },
+            },
+            orderBy: { createdAt: "asc" },
+            take: 50,
+          },
+          _count: {
+            select: { likes: true, comments: true },
+          },
+        },
+      });
+
       if (!post) throw new Error("Post not found");
       return post;
     }),
 
-  // Create post (mock)
+  // Create post
   create: baseProcedure
     .input(
       z.object({
+        userId: z.string(),
         mediaUrls: z.array(z.string().url()).min(1).max(10),
         caption: z.string().max(2200).optional(),
         location: z.string().max(100).optional(),
       })
     )
-    .mutation(({ input }) => {
-      return {
-        id: `p${Date.now()}`,
-        userId: "current-user",
-        mediaUrl: input.mediaUrls,
-        caption: input.caption,
-        location: input.location,
-        createdAt: new Date(),
-      };
+    .mutation(async ({ input }) => {
+      const post = await db.post.create({
+        data: {
+          userId: input.userId,
+          mediaUrl: input.mediaUrls,
+          caption: input.caption,
+          location: input.location,
+        },
+        include: {
+          user: {
+            select: {
+              id: true,
+              username: true,
+              displayName: true,
+              avatar: true,
+              isVerified: true,
+            },
+          },
+        },
+      });
+
+      // Extract and upsert hashtags from caption
+      if (input.caption) {
+        const tags = input.caption.match(/#(\w+)/g);
+        if (tags) {
+          for (const tag of tags) {
+            const name = tag.replace("#", "").toLowerCase();
+            const hashtag = await db.hashtag.upsert({
+              where: { name },
+              create: { name },
+              update: {},
+            });
+            await db.postHashtag.create({
+              data: { postId: post.id, hashtagId: hashtag.id },
+            });
+          }
+        }
+      }
+
+      return post;
     }),
 
-  // Toggle like (mock)
+  // Toggle like
   like: baseProcedure
-    .input(z.object({ postId: z.string() }))
-    .mutation(({ input }) => {
+    .input(z.object({ postId: z.string(), userId: z.string() }))
+    .mutation(async ({ input }) => {
+      const existing = await db.like.findUnique({
+        where: {
+          userId_postId: {
+            userId: input.userId,
+            postId: input.postId,
+          },
+        },
+      });
+
+      if (existing) {
+        await db.like.delete({
+          where: {
+            userId_postId: {
+              userId: input.userId,
+              postId: input.postId,
+            },
+          },
+        });
+        return { liked: false, postId: input.postId };
+      }
+
+      await db.like.create({
+        data: {
+          userId: input.userId,
+          postId: input.postId,
+        },
+      });
+
       return { liked: true, postId: input.postId };
     }),
 
-  // Toggle save (mock)
+  // Toggle save
   save: baseProcedure
-    .input(z.object({ postId: z.string() }))
-    .mutation(({ input }) => {
+    .input(z.object({ postId: z.string(), userId: z.string() }))
+    .mutation(async ({ input }) => {
+      const existing = await db.savedPost.findUnique({
+        where: {
+          userId_postId: {
+            userId: input.userId,
+            postId: input.postId,
+          },
+        },
+      });
+
+      if (existing) {
+        await db.savedPost.delete({
+          where: {
+            userId_postId: {
+              userId: input.userId,
+              postId: input.postId,
+            },
+          },
+        });
+        return { saved: false, postId: input.postId };
+      }
+
+      await db.savedPost.create({
+        data: {
+          userId: input.userId,
+          postId: input.postId,
+        },
+      });
+
       return { saved: true, postId: input.postId };
     }),
 
@@ -139,17 +218,34 @@ export const postRouter = createTRPCRouter({
         limit: z.number().default(12),
       })
     )
-    .query(({ input }) => {
-      const posts = mockPosts.filter(
-        (p) => p.user.username === input.username
-      );
-      return { posts, nextCursor: undefined };
+    .query(async ({ input }) => {
+      const posts = await db.post.findMany({
+        take: input.limit + 1,
+        ...(input.cursor && { cursor: { id: input.cursor }, skip: 1 }),
+        where: { user: { username: input.username } },
+        orderBy: { createdAt: "desc" },
+        select: {
+          id: true,
+          mediaUrl: true,
+          createdAt: true,
+          _count: { select: { likes: true, comments: true } },
+        },
+      });
+
+      let nextCursor: string | undefined;
+      if (posts.length > input.limit) {
+        const next = posts.pop();
+        nextCursor = next?.id;
+      }
+
+      return { posts, nextCursor };
     }),
 
-  // Delete post (mock)
+  // Delete post
   delete: baseProcedure
     .input(z.object({ postId: z.string() }))
-    .mutation(({ input }) => {
+    .mutation(async ({ input }) => {
+      await db.post.delete({ where: { id: input.postId } });
       return { deleted: true, postId: input.postId };
     }),
 });
