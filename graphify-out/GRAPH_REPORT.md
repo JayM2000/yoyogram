@@ -1,7 +1,7 @@
 # Graph Report - C:\Users\misal\OneDrive\Documents\yoyogram  (2026-06-19)
 
 ## Corpus Check
-- 46 files · ~16,674 words
+- 46 files · ~18,764 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
